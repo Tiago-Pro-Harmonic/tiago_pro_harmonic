@@ -1,6 +1,38 @@
 # Installing the workspace
 
-This tutorial provides a quick procedure to set up a worspace using Tiago-Pro in ROS2 Jazzy and Gazebo Harmonic with tools developped by Gepetto team. 
+This organisation provides a quick procedure to set up a worspace using Tiago-Pro in ROS2 Jazzy and Gazebo Harmonic with tools developped by Gepetto team. 
+
+  1. Clone this repository 
+
+```
+git clone https://github.com/Tiago-Pro-Harmonic/tiago_pro_harmonic.git
+cd tiago_pro_harmonic
+```
+
+  2. Download a lightweight web browser
+
+```
+wget https://github.com/goastian/midori-desktop/releases/download/v11.6/midori_11.6-1_amd64.deb
+```
+  
+  3. Download ros2 repositories
+
+```
+mkdir ros2_ws/src
+cd ros2_ws/src
+
+vcs import < ../dependencies/controls.repos 
+vcs import < ../dependencies/tiago_pro_dependencies.repos 
+
+cd -
+```
+
+  
+  4. Build the docker image
+
+```
+docker build --build-arg DOCKER_USER=`id -u` --build-arg DOCKER_GROUP=`id -g` -t hpp:tuto -f Dockerfile .
+```
 
 ## Prerequisite
 
