@@ -1,0 +1,49 @@
+repositories:
+  vcs_tiago_pro/tiago_pro_simulation:
+    type: git
+    url: https://github.com/Tiago-Pro-Harmonic/tiago_pro_simulation.git
+    version: jazzy_harmonic
+  vcs_tiago_pro/tiago_pro_head_robot:
+    type: git
+    url: https://github.com/Tiago-Pro-Harmonic/tiago_pro_head_robot.git
+    version: jazzy_harmonic
+  vcs_tiago_pro/tiago_pro_robot:
+    type: git
+    url: https://github.com/Tiago-Pro-Harmonic/tiago_pro_robot.git
+    version: jazzy_harmonic
+  vcs_tiago_pro/pal_urdf_utils:
+    type: git
+    url: https://github.com/Tiago-Pro-Harmonic/pal_urdf_utils.git
+    version: jazzy_harmonic
+  vcs_tiago_pro/omni_base_robot:
+    type: git
+    url: https://github.com/Tiago-Pro-Harmonic/omni_base_robot.git
+    version: jazzy_harmonic
+  vcs_tiago_pro/pal_pro_gripper:
+    type: git
+    url: https://github.com/Tiago-Pro-Harmonic/pal_pro_gripper.git
+    version: jazzy_harmonic
+  vcs_tiago_pro/pal_sea_arm:
+    type: git
+    url: https://github.com/Tiago-Pro-Harmonic/pal_sea_arm.git
+    version: jazzy_harmonic
+  vcs_tiago_pro/play_motion2:
+    type: git
+    url: https://github.com/Tiago-Pro-Harmonic/play_motion2.git
+    version: humble-devel
+  vcs_tiago_pro/tiago_pro_moveit_config:
+    type: git
+    url: https://github.com/Tiago-Pro-Harmonic/tiago_pro_moveit_config.git
+    version: humble-devel
+  vcs_tiago_pro/launch_pal:
+    type: git
+    url: https://github.com/Tiago-Pro-Harmonic/launch_pal.git
+    version: master
+  vcs_tiago_pro/br2_gazebo_worlds:
+    type: git
+    url: https://github.com/Tiago-Pro-Harmonic/br2_gazebo_worlds.git
+    version: main
+  vcs_tiago_pro/pal_sea_arm_moveit_config:
+    type: git
+    url: https://github.com/Tiago-Pro-Harmonic/pal_sea_arm_moveit_config.git
+    version: humble-devel

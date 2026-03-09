@@ -1,0 +1,26 @@
+---
+repositories:
+  vcs_control/mim_solvers:
+    type: git
+    url: https://github.com/machines-in-motion/mim_solvers
+    version: devel
+  vcs_control/colmpc:
+    type: git
+    url: https://github.com/agimus-project/colmpc
+    version: v0.3.0
+  vcs_control/gep_tiago_pro_control_stack:
+    type: git
+    url: https://github.com/Tiago-Pro-Harmonic/gep_tiago_pro_control_stack.git
+    version: master
+  vcs_control/linear_feedback_controller_msgs:
+    type: git
+    url: https://github.com/loco-3d/linear-feedback-controller-msgs.git
+    version: main
+  vcs_control/linear_feedback_controller:
+    type: git
+    url: https://github.com/loco-3d/linear-feedback-controller.git
+    version: main
+  vcs_control/agimus_controller:
+    type: git
+    url: https://github.com/agimus-project/agimus_controller.git
+    version: humble-devel
