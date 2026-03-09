@@ -57,8 +57,8 @@ chmod 775 run_docker.sh
   6. In the docker container, install hpp
 
 ```
-source hpp_config.sh
 cd /home/user/devel/hpp_ws/src
+source ../../hpp_config.sh
 make all
 # You can now play with hpp !
 ```
