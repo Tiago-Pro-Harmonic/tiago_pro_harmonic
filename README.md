@@ -57,8 +57,8 @@ chmod 775 run_docker.sh
   6. In the docker container, install hpp
 
 ```
-source hpp_config.sh
-cd /home/user/devel/hpp_ws/src
+cd /home/user/devel/src
+source ../../hpp_config.sh 
 make all
 # You can now play with hpp !
 ```
@@ -66,6 +66,7 @@ make all
   6. Open a new terminal and build ros2 packages
 
 ```
+docker exec -it tiago_pro bash
 cd /home/user/devel/ros2_ws
 colcon build --symlink-install
 # you can now launch Tiago_pro in Gazebo !

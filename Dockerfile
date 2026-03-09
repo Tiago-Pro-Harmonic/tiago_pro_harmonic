@@ -51,7 +51,7 @@ RUN adduser --uid $DOCKER_USER --gid $DOCKER_GROUP user
 USER user
 RUN mkdir /home/user/devel
 
-ENV DEVEL_HPP_DIR=/home/user/devel/hpp_ws
+ENV DEVEL_HPP_DIR=/home/user/devel
 
 RUN echo "source /opt/ros/jazzy/setup.bash" >> ~/.bashrc
 RUN echo "export ROS_DOMAIN_ID=5" >> ~/.bashrc
