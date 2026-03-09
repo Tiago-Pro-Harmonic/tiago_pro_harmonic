@@ -44,7 +44,7 @@ cd -
   4. Build the docker image
 
 ```
-docker build --build-arg DOCKER_USER=`id -u` --build-arg DOCKER_GROUP=`id -g` -t hpp:tuto -f Dockerfile .
+docker build --build-arg DOCKER_USER=`id -u` --build-arg DOCKER_GROUP=`id -g` -t gep:tiago_pro -f Dockerfile .
 ```
 
   5. Run the container
