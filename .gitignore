@@ -1,7 +1,9 @@
 hpp_ws/install/
 hpp_ws/src/jrl-cmakemodules/
 hpp_ws/src/hpp*
+hpp_ws/src/qgv/
 ros2_ws/build/
 ros2_ws/install/
 ros2_ws/log/
+ros2_ws/src/
 midori_11.6-1_amd64.deb
