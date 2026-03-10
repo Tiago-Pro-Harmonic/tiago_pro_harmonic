@@ -67,6 +67,7 @@ make all
 
 ```
 cd /home/user/devel/ros2_ws
+source ../ros2_config.sh
 colcon build --symlink-install
 # you can now launch Tiago_pro in Gazebo !
 ```

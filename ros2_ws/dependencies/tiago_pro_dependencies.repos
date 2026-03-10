@@ -27,10 +27,6 @@ repositories:
     type: git
     url: https://github.com/Tiago-Pro-Harmonic/pal_sea_arm.git
     version: jazzy_harmonic
-  vcs_tiago_pro/play_motion2:
-    type: git
-    url: https://github.com/Tiago-Pro-Harmonic/play_motion2.git
-    version: humble-devel
   vcs_tiago_pro/tiago_pro_moveit_config:
     type: git
     url: https://github.com/Tiago-Pro-Harmonic/tiago_pro_moveit_config.git
