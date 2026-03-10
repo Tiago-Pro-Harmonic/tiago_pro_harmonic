@@ -46,6 +46,12 @@ cd -
 ```
 docker build --build-arg DOCKER_USER=`id -u` --build-arg DOCKER_GROUP=`id -g` -t gep:tiago_pro -f Dockerfile .
 ```
+> [!NOTE]
+> you can also get the docker on github :
+> ```bash
+> docker pull ghcr.io/tiago-pro-harmonic/gep:tiago_pro
+> docker tag ghcr.io/tiago-pro-harmonic/gep:tiago_pro gep:tiago_pro
+> ```
 
   5. Run the container
 
