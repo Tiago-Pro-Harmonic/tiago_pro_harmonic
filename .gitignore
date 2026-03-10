@@ -1,5 +1,6 @@
 hpp_ws/install/
-spp_ws/src/
+hpp_ws/src/jrl-cmakemodules/
+hpp_ws/src/hpp*
 ros2_ws/build/
 ros2_ws/install/
 ros2_ws/log/
