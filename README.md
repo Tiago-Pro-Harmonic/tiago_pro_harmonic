@@ -72,6 +72,7 @@ make all
   6. Open a new terminal and build ros2 packages
 
 ```
+docker exec -it tiago_pro bash
 cd /home/user/devel/ros2_ws
 source ../ros2_config.sh
 colcon build --symlink-install
