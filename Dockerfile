@@ -31,7 +31,9 @@ RUN apt-get update -y && DEBIAN_FRONTEND=noninteractive apt-get install -qqy \
     ros-jazzy-ros2-controllers \
     ros-jazzy-gz-ros2-control \
     ros-jazzy-launch-param-builder \
-    ros-jazzy-realsense2-description
+    ros-jazzy-realsense2-description \
+    ros-jazzy-tf-transformations \
+    python3-opencv
 
 RUN apt-get update -y && DEBIAN_FRONTEND=noninteractive apt-get install -qqy \
     libasound2-dev libatk1.0-0 libc6 libcairo-gobject2 libcairo2 libdbus-1-3 libdbus-glib-1-2 \

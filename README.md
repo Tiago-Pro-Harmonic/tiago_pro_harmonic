@@ -87,7 +87,6 @@ colcon build --symlink-install
 ros2 launch tiago_pro_gazebo tiago_pro_gazebo.launch.py \
                 is_public_sim:=True \
                 world_name:=empty \
-                arm_type_left:=no-arm \
                 end_effector_right:=no-end-effector \
                 end_effector_left:=no-end-effector \
                 tuck_arm:=False \
@@ -112,3 +111,7 @@ See LICENSE-APACHE and LICENSE-MIT for details.
 Contributors
 ---------------
 Clément Pène
+
+TODO
+---------------
+- controller for end effector is not working properly in gz.
