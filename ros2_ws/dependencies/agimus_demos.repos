@@ -1,0 +1,10 @@
+---
+repositories:
+  agimus_tools/ros2_aruco:
+    type: git
+    url: https://github.com/JMU-ROBOTICS-VIVA/ros2_aruco.git
+    version: main
+  agimus_demos:
+    type: git
+    url: https://github.com/Tiago-Pro-Harmonic/agimus-demos.git
+    version: main
