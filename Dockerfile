@@ -36,6 +36,11 @@ RUN apt-get update -y && DEBIAN_FRONTEND=noninteractive apt-get install -qqy \
     python3-opencv
 
 RUN apt-get update -y && DEBIAN_FRONTEND=noninteractive apt-get install -qqy \
+    ros-jazzy-cyclonedds \
+    ros-jazzy-rmw-cyclonedds-cpp \
+    ros-jazzy-rosbag2-storage-mcap
+
+RUN apt-get update -y && DEBIAN_FRONTEND=noninteractive apt-get install -qqy \
     libasound2-dev libatk1.0-0 libc6 libcairo-gobject2 libcairo2 libdbus-1-3 libdbus-glib-1-2 \
     libffi8 libfontconfig1 libfreetype6 libglib2.0-0 libgtk-3-0 libnspr4 libnss3 libpango-1.0-0 \
     libstdc++6 libvpx9 apulse \
@@ -56,5 +61,4 @@ RUN mkdir /home/user/devel
 ENV DEVEL_HPP_DIR=/home/user/devel/hpp_ws
 
 RUN echo "source /opt/ros/jazzy/setup.bash" >> ~/.bashrc
-RUN echo "export ROS_DOMAIN_ID=5" >> ~/.bashrc
 
