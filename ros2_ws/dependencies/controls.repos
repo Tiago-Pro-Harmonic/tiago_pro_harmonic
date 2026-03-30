@@ -18,12 +18,12 @@ repositories:
     version: main
   vcs_control/linear_feedback_controller:
     type: git
-    url: https://github.com/loco-3d/linear-feedback-controller.git
-    version: main
+    url: https://github.com/clementPene/linear-feedback-controller.git
+    version: fix/add_joints_types
   vcs_control/agimus_controller:
     type: git
-    url: https://github.com/agimus-project/agimus_controller.git
-    version: humble-devel
+    url: https://github.com/Tiago-Pro-Harmonic/agimus_controller.git
+    version: feature/planar_base
   vcs_control/agimus_msgs:
     type: git
     url: https://github.com/agimus-project/agimus-msgs.git
