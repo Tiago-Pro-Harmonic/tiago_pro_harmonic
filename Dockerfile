@@ -20,7 +20,7 @@ RUN apt-get update -y && DEBIAN_FRONTEND=noninteractive apt-get install -qqy \
     libboost-filesystem1.83-dev libboost-python1.83.0 \
     libboost-thread1.83-dev python3-numpy liburdfdom-dev wget python3.12-venv \
     python-is-python3 doxygen \
-    tree nano python3-vcstool python3-pip
+    tree nano python3-vcstool python3-pip xterm
 
 RUN apt-get update -y && DEBIAN_FRONTEND=noninteractive apt-get install -qqy \
     robotpkg-py312-crocoddyl \
