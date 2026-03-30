@@ -89,7 +89,7 @@ python-venv:
 	else \
 		python -m venv ${INSTALL_HPP_DIR}; \
 		${INSTALL_HPP_DIR}/bin/pip install --prefix=${INSTALL_HPP_DIR} \
-			"numpy==1.26.4" trimesh pycollada viser; \
+			"numpy==1.26.4" trimesh pycollada viser pyyaml ipython; \
 	fi
 
 # }}}
