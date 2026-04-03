@@ -38,30 +38,34 @@ HPP_EXTRA_FLAGS= -DBUILD_TESTING=${BUILD_TESTING}
 jrl-cmakemodules_branch=master
 jrl-cmakemodules_repository=${JRL_REPO}
 
-hpp-python_branch=robotics-principia
-hpp-python_repository=${FLORENT_REPO}
+hpp-python_branch=devel
+hpp-python_repository=${HPP_REPO}
 hpp-python_extra_flags=${HPP_EXTRA_FLAGS} ${PYTHON_FLAGS}
 
-hpp-doc_branch=robotics-principia
-hpp-doc_repository=${FLORENT_REPO}
+hpp-doc_branch=devel
+hpp-doc_repository=${HPP_REPO}
 
-hpp_tutorial_branch=robotics-principia
+hpp_tutorial_branch=devel
 hpp_tutorial_repository=${FLORENT_REPO}
 hpp_tutorial_extra_flags=${HPP_EXTRA_FLAGS} ${PYTHON_FLAGS}
 
-hpp-gepetto-viewer_branch=robotics-principia
-hpp-gepetto-viewer_repository=${FLORENT_REPO}
+hpp-gepetto-viewer_branch=devel
+hpp-gepetto-viewer_repository=${HPP_REPO}
 hpp-gepetto-viewer_extra_flags= ${PYTHON_FLAGS} -DUSE_HPP_PYTHON=ON -DINSTALL_DOCUMENTATION=OFF
 
-hpp-plot_branch=robotics-principia
-hpp-plot_repository=${FLORENT_REPO}
+hpp-plot_branch=devel
+hpp-plot_repository=${HPP_REPO}
 hpp-plot_extra_flags=  -DINSTALL_DOCUMENTATION=OFF
 
-hpp-manipulation_branch=v7.0.0
+hpp-core_branch=devel
+hpp-core_repository=${HPP_REPO}
+hpp-core_extra_flags=
+
+hpp-manipulation_branch=devel
 hpp-manipulation_repository=${HPP_REPO}
 hpp-manipulation_extra_flags=
 
-hpp-manipulation-urdf_branch=v7.0.0
+hpp-manipulation-urdf_branch=devel
 hpp-manipulation-urdf_repository=${HPP_REPO}
 hpp-manipulation-urdf_extra_flags=
 
@@ -98,16 +102,17 @@ python-venv:
 
 jrl-cmakemodules.configure.dep: jrl-cmakemodules.checkout
 hpp-doc.configure.dep: hpp-doc.checkout
-hpp-plot.configure.dep: hpp-plot.checkout jrl-cmakemodules.install qgv.install \
-	hpp-manipulation.install
+hpp-core.configure.dep: hpp-core.checkout jrl-cmakemodules.install
+hpp-manipulation.configure.dep: hpp-manipulation.checkout hpp-core.install
+hpp-manipulation-urdf.configure.dep: hpp-manipulation-urdf.checkout hpp-manipulation.install
 hpp-python.configure.dep: hpp-python.checkout jrl-cmakemodules.install \
 	hpp-manipulation-urdf.install
+hpp-plot.configure.dep: hpp-plot.checkout jrl-cmakemodules.install qgv.install \
+	hpp-manipulation.install
 qgv.configure.dep: qgv.checkout jrl-cmakemodules.install
 hpp_tutorial.configure.dep: hpp_tutorial.checkout hpp-gepetto-viewer.install \
 	hpp-python.install
 hpp-gepetto-viewer.configure.dep: hpp-gepetto-viewer.checkout python-venv hpp-python.install
-hpp-manipulation-urdf.configure.dep: hpp-manipulation-urdf.checkout
-hpp-manipulation.configure.dep: hpp-manipulation.checkout hpp-manipulation.install
 
 # }}}
 ##################################

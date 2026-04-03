@@ -15,7 +15,7 @@ RUN apt-get update -y && DEBIAN_FRONTEND=noninteractive apt-get install -qqy \
     robotpkg-py312-pinocchio robotpkg-py312-omniorbpy \
     robotpkg-hpp-statistics+doc \
     robotpkg-hpp-util+doc robotpkg-hpp-pinocchio+doc \
-    robotpkg-hpp-constraints+doc robotpkg-hpp-core+doc \
+    robotpkg-hpp-constraints+doc \
     robotpkg-qt5-qgv \
     libboost-filesystem1.83-dev libboost-python1.83.0 \
     libboost-thread1.83-dev python3-numpy liburdfdom-dev wget python3.12-venv \
